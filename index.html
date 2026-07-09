@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Questly — úniková hra v ulicích Brna. Spouštíme brzy.</title>
-<meta name="description" content="Venkovní úniková hra přímo v ulicích Brna. Přijď na místo, vyřeš hádanku, odemkni další kus města. Spouštíme brzy — přidej se na seznam a buď u toho první."/>
+<title>Questly — nová platforma pro venkovní únikové hry. Spouštíme brzy.</title>
+<meta name="description" content="Nová platforma pro hraní venkovních únikových her. Přijď na místo, vyřeš hádanku, odemkni další kus příběhu. Spouštíme brzy — přidej se na seznam a buď u toho první."/>
 <!-- Sdílení odkazu (Facebook/Messenger/WhatsApp náhled) -->
-<meta property="og:title" content="Questly — Brno, které jsi ještě neodemkl."/>
-<meta property="og:description" content="Venkovní úniková hra v ulicích Brna. Spouštíme brzy — buď u toho jako první."/>
+<meta property="og:title" content="Questly — příběhy, které čekají, až je zažiješ."/>
+<meta property="og:description" content="Nová platforma pro venkovní únikové hry. Spouštíme brzy — buď u toho jako první."/>
 <meta property="og:type" content="website"/>
 <meta name="theme-color" content="#0E1C35"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -25,7 +25,7 @@
     --ui:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth; background:var(--bg);}
   body{
     background:var(--bg); color:var(--txt); font-family:var(--ui);
     line-height:1.55; -webkit-font-smoothing:antialiased; overflow-x:hidden;
@@ -197,9 +197,9 @@
       <span class="pill">SPOUŠTÍME BRZY</span>
     </div>
 
-    <p class="eyebrow">Úniková hra v ulicích Brna</p>
-    <h1>Brno, které jsi&nbsp;ještě <em>neodemkl.</em></h1>
-    <p class="lede">Přijď na skutečné místo ve městě, vyřeš hádanku, odemkni další kus mapy. Úniková hra pod širým nebem — a startuje u nás v Brně.</p>
+    <p class="eyebrow">Nová platforma pro hraní venkovních únikových her</p>
+    <h1>Příběhy, které čekají, až je <em>zažiješ.</em></h1>
+    <p class="lede">Přijď na skutečné místo, vyřeš hádanku, odemkni další kus příběhu. Úniková hra pod širým nebem — přímo tam, kde bydlíš.</p>
 
     <div class="card" id="card">
       <div id="form-wrap">
@@ -239,13 +239,13 @@
 
         <div class="perk">
           <span class="k">★</span>
-          <span>Prvních 100 hráčů v Brně dostane odznak <b style="color:var(--txt)">Zakladatel</b> a první misi zdarma.</span>
+          <span>Prvních 100 hráčů získá odznak <b style="color:var(--txt)">Zakladatel</b>.</span>
         </div>
       </div>
 
       <div class="done" id="done" style="display:none;">
         <div class="big">Jsi na seznamu 🎉</div>
-        <p id="done-msg">Dáme ti vědět mezi prvními, jakmile v Brně spustíme. Zatím můžeš přihodit parťáka — hraje se ve dvou líp.</p>
+        <p id="done-msg">Dáme ti vědět mezi prvními, jakmile spustíme. Zatím můžeš přihodit parťáka — hraje se ve dvou líp.</p>
         <button class="btn btn-ghost" id="share">Pošli to kamarádovi</button>
       </div>
     </div>
@@ -260,15 +260,15 @@
 
     <div class="step">
       <div class="num">01</div>
-      <div><h3>Přijď na start</h3><p>Mapa tě navede na první skutečné místo ve městě. Kousek od tebe, ne na gauči.</p></div>
+      <div><h3>Přijď na start</h3><p>Mapa tě navede na předem určené místo ve městě.</p></div>
     </div>
     <div class="step">
       <div class="num">02</div>
-      <div><h3>Vyřeš hádanku</h3><p>Na místě se odemkne úkol — šifra, pátrání, logika. Jako úniková hra, ale venku.</p></div>
+      <div><h3>Prožij příběh</h3><p>Na místě tě čeká šifra, pátrání nebo hádanka k rozluštění. Úniková hra, ale venku.</p></div>
     </div>
     <div class="step">
       <div class="num">03</div>
-      <div><h3>Odemkni město</h3><p>Za správnou odpověď se odhalí další bod. Kousek po kousku projdeš celý příběh Brnem.</p></div>
+      <div><h3>Staň se nejlepším</h3><p>Dokonči příběh, sbírej body a sleduj se v žebříčcích.</p></div>
     </div>
   </div>
 </section>
@@ -287,14 +287,13 @@
   </div>
 </section>
 
-<!-- ══════════ PROČ BRNO ══════════ -->
+<!-- ══════════ KDO JSME ══════════ -->
 <section class="brno">
   <div class="container">
-    <p class="sec-eyebrow">Proč Brno</p>
-    <h2 class="sec-h">Protože tu bydlím.</h2>
-    <p>Questly staví jeden člověk — a začíná tam, kde to zná nejlíp. První mise vznikají teď, přímo v brněnských ulicích, na místech, kolem kterých chodím každý den.</p>
-    <p>Chceš vědět, kdy bude hotovo a být u toho dřív než ostatní?</p>
-    <a class="cta-link" href="#card">Nech mi nahoře e-mail →</a>
+    <p class="sec-eyebrow">Kdo za tím stojí</p>
+    <h2 class="sec-h">Kdo jsme?</h2>
+    <p>Jsme dva kluci z Brna, které baví hraní únikových her a turistika. Rádi chodíme ven, luštíme křížovky, řešíme hádanky — a ještě radši čteme knihy. Proto vytváříme platformu, která spojuje všechno, co nás baví. A věříme, že bude bavit i vás.</p>
+    <a class="cta-link" href="#card">Buď u toho od první mise →</a>
   </div>
 </section>
 
@@ -309,11 +308,12 @@
 
     <details class="priv" id="privacy">
       <summary>Jak nakládáme s údaji</summary>
-      <p>Ukládáme jen tvůj e-mail a vybrané město — a to jediné proto, abychom ti dali vědět, až Questly spustíme. Neposíláme spam, data nepředáváme dál a kdykoli tě na požádání ze seznamu smažeme. Stačí napsat na náš kontaktní e-mail. Před ostrým spuštěním doporučujeme provozovateli nechat zásady zpracování osobních údajů zkontrolovat s ohledem na GDPR.</p>
+      <p>Ukládáme jen tvůj e-mail a vybrané město — a to jediné proto, abychom ti dali vědět, až Questly spustíme. Neposíláme spam, data nepředáváme dál a kdykoli tě na požádání ze seznamu smažeme. Stačí napsat na <a href="mailto:info@questly.cz">info@questly.cz</a>.</p>
     </details>
 
     <div class="foot-links">
-      <a href="#" id="ig-link" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:info@questly.cz">info@questly.cz</a>
+      <a href="https://www.instagram.com/questlycz?igsh=MTRsOWNsNG1qNDZ3Yg%3D%3D&utm_source=qr" id="ig-link" target="_blank" rel="noopener">Instagram</a>
       <a href="#card">Přidat se na seznam</a>
     </div>
     <div class="copy">© 2026 Questly</div>
@@ -366,7 +366,7 @@ async function submitWaitlist(){
 
 function succeed(already){
   if(already){
-    $('done-msg').textContent='Tenhle e-mail už na seznamu je — jsi v klidu. Dáme ti vědět mezi prvními, jakmile v Brně spustíme.';
+    $('done-msg').textContent='Tenhle e-mail už na seznamu je — jsi v klidu. Dáme ti vědět mezi prvními, jakmile spustíme.';
   }
   $('form-wrap').style.display='none';
   $('done').style.display='block';
@@ -377,15 +377,14 @@ btn.addEventListener('click',submitWaitlist);
 
 // sdílení pro kamaráda
 $('share').addEventListener('click',async()=>{
-  const data={ title:'Questly', text:'Úniková hra v ulicích Brna — spouštějí brzy. Přidej se na seznam:', url:location.href };
+  const data={ title:'Questly', text:'Nová platforma pro venkovní únikové hry — spouštíme brzy. Přidej se na seznam:', url:location.href };
   try{
     if(navigator.share){ await navigator.share(data); }
     else{ await navigator.clipboard.writeText(location.href); $('share').textContent='Odkaz zkopírován ✓'; }
   }catch(e){ /* uživatel sdílení zrušil — nic neřešíme */ }
 });
 
-// TODO: až budeš mít IG účet, doplň sem odkaz
-$('ig-link').setAttribute('href','https://instagram.com/');
+// (odkaz na Instagram je teď napevno v HTML u #ig-link, žádné JS doplnění netřeba)
 </script>
 </body>
 </html>
