@@ -10,12 +10,13 @@
 <meta property="og:description" content="Nová platforma pro venkovní únikové hry. Spouštíme brzy — buď u toho jako první."/>
 <meta property="og:type" content="website"/>
 <meta name="theme-color" content="#0E1C35"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<meta name="color-scheme" content="dark"/>
+<link rel="preconnect" href="https://fonts.bunny.net"/>
+<link href="https://fonts.bunny.net/css?family=lora:500,600,600i|poppins:400,500,600,700&display=swap" rel="stylesheet"/>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <style>
   :root{
+    color-scheme: dark;
     --bg:#0E1C35; --navy:#1B2A4A; --navy2:#243554; --navy3:#2D3F62;
     --amber:#F59E0B; --amber2:#FCD34D;
     --teal:#14B8A6; --teal2:#2DD4BF;
@@ -121,7 +122,8 @@
 
   .uses{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
   .use{background:var(--navy2); border:1px solid var(--bdr); border-radius:14px; padding:16px;}
-  .use .ic{font-size:22px; margin-bottom:8px; display:block;}
+  .use .ic{display:block; width:26px; height:26px; margin-bottom:10px;}
+  .use .ic svg{width:100%; height:100%; display:block;}
   .use h4{font-size:14.5px; font-weight:600; margin-bottom:3px;}
   .use p{font-size:12.5px; color:var(--txt2); line-height:1.4;}
 
@@ -197,9 +199,9 @@
       <span class="pill">SPOUŠTÍME BRZY</span>
     </div>
 
-    <p class="eyebrow">Nová platforma pro hraní venkovních únikových her</p>
-    <h1>Příběhy, které čekají, až je <em>zažiješ.</em></h1>
-    <p class="lede">Přijď na skutečné místo, vyřeš hádanku, odemkni další kus příběhu. Úniková hra pod širým nebem — přímo tam, kde bydlíš.</p>
+    <p class="eyebrow">Venkovní únikové hry</p>
+    <h1>Město znáš. <em>Jeho tajemství ne.</em></h1>
+    <p class="lede">Questly promění ulice, které znáš, v únikovou hru. Přijdeš na místo, rozlouskneš šifru a odemkneš další kapitolu příběhu. Žádná místnost — hraje se celým městem.</p>
 
     <div class="card" id="card">
       <div id="form-wrap">
@@ -239,7 +241,7 @@
 
         <div class="perk">
           <span class="k">★</span>
-          <span>Prvních 100 hráčů získá odznak <b style="color:var(--txt)">Zakladatel</b>.</span>
+          <span>Prvních 100 hráčů získá odznak <b style="color:var(--txt)">Zakladatel</b> — zůstane u profilu napořád.</span>
         </div>
       </div>
 
@@ -260,15 +262,15 @@
 
     <div class="step">
       <div class="num">01</div>
-      <div><h3>Přijď na start</h3><p>Mapa tě navede na předem určené místo ve městě.</p></div>
+      <div><h3>Vyraž na start</h3><p>Mapa tě zavede na skutečné místo ve tvém městě.</p></div>
     </div>
     <div class="step">
       <div class="num">02</div>
-      <div><h3>Prožij příběh</h3><p>Na místě tě čeká šifra, pátrání nebo hádanka k rozluštění. Úniková hra, ale venku.</p></div>
+      <div><h3>Rozlušti stopy</h3><p>Šifry, pátrání, hádanky. Úniková hra bez místnosti — pod širým nebem.</p></div>
     </div>
     <div class="step">
       <div class="num">03</div>
-      <div><h3>Staň se nejlepším</h3><p>Dokonči příběh, sbírej body a sleduj se v žebříčcích.</p></div>
+      <div><h3>Dohraj a porovnej se</h3><p>Dokonči příběh, posbírej body a změř se s ostatními v žebříčku.</p></div>
     </div>
   </div>
 </section>
@@ -276,13 +278,25 @@
 <!-- ══════════ PRO KOHO ══════════ -->
 <section style="background:var(--navy);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);">
   <div class="container">
-    <p class="sec-eyebrow">Skvělý plán na</p>
-    <h2 class="sec-h">Sobotu, co si budete pamatovat.</h2>
+    <p class="sec-eyebrow">Kdy se Questly hodí</p>
+    <h2 class="sec-h">Na den, který stojí za řeč.</h2>
     <div class="uses">
-      <div class="use"><span class="ic">💛</span><h4>Rande ve dvou</h4><p>Něco spolu řešit místo koukání do telefonu.</p></div>
-      <div class="use"><span class="ic">🧒</span><h4>Odpoledne s dětmi</h4><p>Venku, v pohybu a rozhodně ne nuda.</p></div>
-      <div class="use"><span class="ic">🎉</span><h4>Výlet s partou</h4><p>Soutěž, kdo rozlouskne město rychleji.</p></div>
-      <div class="use"><span class="ic">🤝</span><h4>Firemní teambuilding</h4><p>Originální akce bez cestování a bez balíku peněz.</p></div>
+      <div class="use">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#2DD4BF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></span>
+        <h4>Rande ve dvou</h4><p>Něco spolu řešit místo koukání do telefonu.</p>
+      </div>
+      <div class="use">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#2DD4BF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 8-7 12L5 10z"/><path d="M5 10h14"/><path d="M12 2v20"/></svg></span>
+        <h4>Odpoledne s dětmi</h4><p>Venku, v pohybu a rozhodně ne nuda.</p>
+      </div>
+      <div class="use">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#2DD4BF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V4"/><path d="M4 4h13l-2.5 4L17 12H4"/></svg></span>
+        <h4>Výprava s partou</h4><p>Kdo rozlouskne město rychleji?</p>
+      </div>
+      <div class="use">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#2DD4BF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></span>
+        <h4>Firemní teambuilding</h4><p>Originální akce bez cestování a velkého rozpočtu.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -292,7 +306,7 @@
   <div class="container">
     <p class="sec-eyebrow">Kdo za tím stojí</p>
     <h2 class="sec-h">Kdo jsme?</h2>
-    <p>Jsme dva kluci z Brna, které baví hraní únikových her a turistika. Rádi chodíme ven, luštíme křížovky, řešíme hádanky — a ještě radši čteme knihy. Proto vytváříme platformu, která spojuje všechno, co nás baví. A věříme, že bude bavit i vás.</p>
+    <p>Dva kluci z Brna, co milují únikovky, turistiku a dobré příběhy. Rádi chodíme ven, luštíme šifry a hádanky — a ještě radši čteme knihy. Questly spojuje všechno, co nás baví. A věříme, že bude bavit i tebe.</p>
     <a class="cta-link" href="#card">Buď u toho od první mise →</a>
   </div>
 </section>
@@ -308,7 +322,7 @@
 
     <details class="priv" id="privacy">
       <summary>Jak nakládáme s údaji</summary>
-      <p>Ukládáme jen tvůj e-mail a vybrané město — a to jediné proto, abychom ti dali vědět, až Questly spustíme. Neposíláme spam, data nepředáváme dál a kdykoli tě na požádání ze seznamu smažeme. Stačí napsat na <a href="mailto:info@questly.cz">info@questly.cz</a>.</p>
+      <p>Správcem údajů jsou tvůrci projektu Questly, kontakt <a href="mailto:info@questly.cz">info@questly.cz</a>. Ukládáme jen tvůj e-mail a vybrané město, a to výhradně proto, abychom ti dali vědět o spuštění Questly a novinkách kolem startu. Právním základem je tvůj souhlas — kdykoli ho můžeš odvolat e-mailem a ze seznamu tě smažeme. Data jsou uložena zabezpečeně u služby Supabase a nikomu dalšímu je nepředáváme. Seznam smažeme nejpozději do 12 měsíců po spuštění. Máš právo na přístup ke svým údajům, jejich opravu a výmaz, a případně na stížnost u Úřadu pro ochranu osobních údajů (uoou.gov.cz). Stránka nepoužívá cookies ani analytické nástroje.</p>
     </details>
 
     <div class="foot-links">
